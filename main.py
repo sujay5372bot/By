@@ -2,7 +2,7 @@ import telegram.ext
 import os
 
 with open('token.txt', 'r') as f:
- TOKEN = f.read()
+ TOKEN = f.read().strip()
 
 def start(update, context):
     update.message.reply_text("hello! swagat hai")
